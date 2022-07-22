@@ -1,0 +1,24 @@
+{
+  "networks": [
+    {
+      "id": 1,
+      "name": "twitter",
+      "url": ""
+    },
+    {
+      "id": 2,
+      "name": "codepen",
+      "url": ""
+    },
+    {
+      "id": 3,
+      "name": "linkedin",
+      "url": ""
+    },
+    {
+      "id": 4,
+      "name": "github",
+      "url": ""
+    }
+  ]
+}

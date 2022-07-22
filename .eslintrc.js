@@ -1,19 +1,20 @@
 module.exports = {
-  extends: ['airbnb', 'prettier'],
-  plugins: ['prettier'],
+  extends: ['alloy', 'alloy/react', 'alloy/typescript'],
   env: {
+    // Your environments (which contains several predefined global variables)
+    //
     browser: true,
-    es6: true,
+    // node: true,
+    // mocha: true,
+    // jest: true,
+    // jquery: true
+  },
+  globals: {
+    // Your global variables (setting to false means it's not allowed to be reassigned)
+    //
+    // myGlobal: false
   },
   rules: {
-    'import/no-extraneous-dependencies': 'off',
-    'prettier/prettier': 'error',
-    'no-console': 'warn',
-    'react/jsx-one-expression-per-line': 'off',
-    'react/jsx-filename-extension': 'off', // disable if necessary
-    'react/static-property-placement': 'off', // disable if necessary
-    'react/jsx-props-no-spreading': 'off', // disable if necessary
-    'react/require-default-props': 'off',
+    // Customize your rules
   },
-  parser: 'babel-eslint',
 };

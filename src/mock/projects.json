@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "img": "project.jpg",
+      "title": "",
+      "info": "",
+      "info2": "",
+      "url": "",
+      "repo": ""
+    },
+    {
+      "id": 2,
+      "img": "project.jpg",
+      "title": "",
+      "info": "",
+      "info2": "",
+      "url": "",
+      "repo": ""
+    },
+    {
+      "id": 3,
+      "img": "project.jpg",
+      "title": "",
+      "info": "",
+      "info2": "",
+      "url": "",
+      "repo": ""
+    }
+  ]
+}
