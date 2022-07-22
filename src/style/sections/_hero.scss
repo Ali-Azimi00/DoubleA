@@ -1,12 +1,12 @@
-#hero {
+#hero2 {
   min-height: 100vh;
   height: 100vh;
   display: flex;
   align-items: center;
   border-bottom: 0px;
-  background: $white-color;
+  background:rgb(55,55,55);
   font-weight: 400;
-  color: $dark-blue-text;
+  color:  $white-color;
   padding: 0rem 5.6rem;
   margin-bottom: 0;
   top: 0;
@@ -17,15 +17,21 @@
 
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 
-  /* background: url("/src/assets/[your-image].png");
+  background: url("");
   background-position: center;
-  background-size: cover; */
+  background-size: cover;
 
   @include respond(phone) {
     padding: 0rem $default-font-size;
   }
 
-  .hero-title {
+  .tester{
+    display: flex;
+    top: 20px;
+    align-items: center;
+  }
+
+  .hero-title2 {
     font-size: 5.6rem;
     font-weight: 700;
     margin-bottom: 3.2rem;
@@ -47,7 +53,7 @@
     }
   }
 
-  .hero-cta {
+  .hero-cta2 {
     display: flex;
 
     @include respond(tab-port) {
@@ -63,3 +69,77 @@
     }
   }
 }
+
+//////////////////////////////////////////
+#hero {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex-end;
+ // position: sticky;
+  align-items: center;
+  border-bottom: 0px;
+  background:rgb(55,55,55);
+  font-weight: 400;
+  color:  $white-color;
+  padding: 0rem 5.6rem;
+  margin-bottom: 0;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+
+  // If you want to set a background image on the hero section, uncomment these with yout custom image
+
+  background: url("/src/assets/A.PNG");
+  background-position: center;
+  background-size: cover;
+
+  @include respond(phone) {
+    padding: 0rem $default-font-size;
+  }
+
+  .hero-title {
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    text-align: left;
+    position: relative;
+    top: 200px;
+    
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3.6rem;
+      text-align: center;
+    }
+    @include respond(phone) {
+      font-size: 3.5rem;
+      line-height: 1.5;
+    }
+    @include respond(phone-xs) {
+      font-size: 2.8rem;
+    }
+  }
+
+  .hero-cta {
+    display: flex;
+    position: relative;
+    top: 200px;
+
+    @include respond(tab-port) {
+      justify-content: center;
+    }
+
+    & a {
+      font-size: 2.4rem;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+

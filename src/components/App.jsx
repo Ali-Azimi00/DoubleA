@@ -1,13 +1,22 @@
-import React, { useState, useEffect } from 'react';
-import Hero from './Hero/Hero';
-import About from './About/About';
-import Projects from './Projects/Projects';
-import Contact from './Contact/Contact';
-import Footer from './Footer/Footer';
+/* eslint-disable react/jsx-fragments */
+import React, { useEffect, useState } from "react";
+// import { Routes, Route } from "react-router-dom";
+// import Switch from "react-switch"
+import Contact from "./Contact/Contact";
+import Footer from "./Footer/Footer";
+import Home from "./Home/Home";
+import "./styles.css";
+// import Game from "../pages/game";
 
-import { PortfolioProvider } from '../context/context';
+import { PortfolioProvider } from "../context/context";
 
-import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
+import {
+  heroData,
+  aboutData,
+  projectsData,
+  contactData,
+  footerData,
+} from "../mock/data";
 
 function App() {
   const [hero, setHero] = useState({});
@@ -25,13 +34,13 @@ function App() {
   }, []);
 
   return (
-    <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
-    </PortfolioProvider>
+    <React.Fragment>
+      <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
+        <Home path="/" />
+        <Contact />
+        <Footer />
+      </PortfolioProvider>
+    </React.Fragment>
   );
 }
 
