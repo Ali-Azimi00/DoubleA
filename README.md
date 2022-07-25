@@ -9,17 +9,12 @@
 
 ## Features
 
-⚡️ Modern UI Design + Reveal Animations\
-⚡️ One Page Layout built with React\
-⚡️ Styled with Bootstrap v4.3 + Custom SCSS\
-⚡️ Fully Responsive\
-⚡️ Configurable color scheme\
-⚡️ Image optimization with Gatsby\
-⚡️ Easy site customization\
-⚡️ Well organized documentation
-
-To view a demo example, **[click here](https://gatsby-simplefolio.netlify.com/)**\
-To view a live example, **[click here](https://cobidev.com/)**
+Modern UI Design + Reveal Animations\
+Layout built with React\
+Styled with Bootstrap v4.3 + Custom SCSS/
+Fully Responsive\
+Image optimization with Gatsby\
+Well organized documentation
 
 ---
 
@@ -53,10 +48,10 @@ From your command line, first clone Simplefolio:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/cobidev/gatsby-simplefolio
+$ git clone https://github.com/Ali-Azimi00/DoubleA.git
 
 # Go into the repository
-$ cd gatsby-simplefolio
+$ cd DoubleA.git
 
 # Remove current origin repository
 $ git remote remove origin
@@ -93,10 +88,6 @@ $ sudo npm install --unsafe-perm=true --allow-root
 ```
 
 Once your server has started, go to this url `http://localhost:8000/` and you will see the website running on a Development Server:
-
-<h2 align="center">
-  <img src="" alt="Gatsby Simplefolio" width="100%">
-</h2>
 
 ---
 
@@ -230,17 +221,6 @@ $secondary-color: #00cdac;
 
 ---
 
-## Deployment 📦
-
-Once you have done with your setup. You need to put your website online!
-
-I highly recommend to use [Netlify](https://netlify.com) to achieve this on the EASIEST WAY
-
-## Others versions 👥
-
-[Simplefolio](https://github.com/cobidev/simplefolio) by [Jacobo Martinez](https://github.com/cobidev)\
-[Ember.js Simplefolio](https://github.com/sernadesigns/simplefolio-ember) by [Michael Serna](https://github.com/sernadesigns)
-
 ## Technologies used 🛠️
 
 - [Gatsby](https://www.gatsbyjs.org/) - Static Site Generator
@@ -252,10 +232,7 @@ I highly recommend to use [Netlify](https://netlify.com) to achieve this on the 
 ## Authors
 
 - **Jacobo Martinez** - [https://github.com/cobidev](https://github.com/cobidev)
-
-## Status
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2365af6f-820a-4fb8-83e6-69a66f686dfe/deploy-status)](https://app.netlify.com/sites/gatsby-simplefolio/deploys)
+- **Ali Azimi** - [https://github.com/Ali-Azimi00/DoubleA](https://github.com/AliAzimi00)
 
 ## License 📄
 
