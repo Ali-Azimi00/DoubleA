@@ -8,6 +8,7 @@ import ParticlesBg from "particles-bg";
 import PortfolioContext from "../../context/context";
 import Title from "../Title/Title";
 import ProjectImg from "../Image/ProjectImg";
+import Accordion from "./Accordion"
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -28,12 +29,12 @@ const Projects = () => {
   return (
     <React.Fragment>
       <section id="projects">
-        <ParticlesBg color="#000000" v={2} num={100} type="cobweb" bg={true} />
+        <ParticlesBg color="#000000" num={30} type="cobweb" bg={true} />
         <Container>
           <div className="project-wrapper">
             <Title title="Latest Project" />
             {projects.map((project) => {
-              const { title, info, info2, info3, info4, info5, url, repo, img, id } = project;
+              const { title, info, info2, info3, info4, info5, url, img, id } = project;
 
               return (
                 <Row key={id}>
@@ -53,22 +54,25 @@ const Projects = () => {
                           <p>
                             {info || ""}
                           </p>
-                          <p className="mb-4">{">>"}{info2 || ""}</p>
-                          <p className="mb-4">{">>"}{info3 || ""}</p>
-                          <p className="mb-4">{">>"}{info4 || ""}</p>
-                          <p className="mb-4">{">>"}{info5 || ""}</p>
-
+                          <Accordion
+                            className="py-12"
+                            info2={info2}
+                            info3={info3}
+                            info4={info4}
+                            info5={info5}
+                          />
                         </div>
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn cta-btn--hero"
-                          href={url || "#!"}
-                        >
-                          See Live
-                        </a>
-
-                        {repo && (
+                        <div className="py-5">
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="cta-btn cta-btn--hero"
+                            href={url || "#!"}
+                          >
+                            See_Site
+                          </a>
+                        </div>
+                        {/* {repo && (
                           <a
                             target="_blank"
                             rel="noopener noreferrer"
@@ -77,7 +81,7 @@ const Projects = () => {
                           >
                             Source Code
                           </a>
-                        )}
+                        )} */}
                       </div>
                     </Fade>
                   </Col>

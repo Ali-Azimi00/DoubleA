@@ -1,10 +1,11 @@
 #hero2 {
   min-height: 100vh;
+  min-width: 85vh;
   height: 100vh;
   display: flex;
   align-items: center;
   border-bottom: 0px;
-  background:rgb(55,55,55);
+  // background:rgb(0, 0, 0);
   font-weight: 400;
   color:  $white-color;
   padding: 0rem 5.6rem;
@@ -17,8 +18,8 @@
 
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 
-  background: url("");
-  background-position: center;
+  // background: url("https://i.pinimg.com/originals/a2/93/b4/a293b4690ee980b2926270ef85642926.jpg");
+  background-position: top;
   background-size: cover;
 
   @include respond(phone) {

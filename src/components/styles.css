@@ -3,6 +3,65 @@
     text-align: center;
   }
   
+  .modalBtn{
+    color:#02aab0;
+    font-size: 14px;
+    background-color:transparent ;
+    /* padding: 10px; */
+    display: center;
+    border-radius: 120px;
+    opacity:90% ;
+  }
+
+  .modalCard{
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+  }
+  .modalBackground{
+    min-height: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    border-bottom: 0px;
+    font-weight: 400;
+    /* color:  rgb(0,0,0); */
+    padding: 0rem 5.6rem;
+    margin-bottom: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index:3;
+  
+    /* // If you want to set a background image on the hero section, uncomment these with yout custom image */
+  
+    background: url("https://i.pinimg.com/originals/a2/93/b4/a293b4690ee980b2926270ef85642926.jpg");
+    background-position:  bottom -40px right -85px;
+    background-size:70%;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .accordionHeader{
+    color: #02aab0;
+    /* font-size: 15px; */
+    /* opacity: 100%; */
+    /* background-color: transparent; */
+    /* border: none; */
+  }
+  .accordionBody{
+    /* color: #02aab0; */
+    font-size: 15px;
+    /* opacity: 100%; */
+    /* background-color: transparent; */
+    /* border: none; */
+  }
+
+  .projCard{
+    color:#333;
+    opacity:80%;
+  }
+
   .element {
     -moz-transition: all 0.5s ease-in;
     -o-transition: all 0.5s ease-in;
